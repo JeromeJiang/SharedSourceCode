@@ -1,0 +1,248 @@
+﻿
+
+.center {
+    /*设置当前控件与父控件的上下左右边距。这里的边距可以在浏览器F12中style页面查看到更形象的 */
+    vertical-align: middle;
+    margin: auto auto;
+}
+
+/*测试使用，方便清楚的知道当前的控件边际*/
+.testBorder {
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: rgb(0, 0, 0);
+}
+
+/*测试使用，方便清楚的知道当前的控件边际*/
+.border {
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: rgb(0, 0, 0);
+}
+
+/*当前可操作页面的总宽度*/
+.totalWidth {
+    width: 1000px;
+}
+
+/*设置logo控件的宽度*/
+.logoWidth {
+    width: 820px;
+}
+
+/*设置Search Container控件的宽度*/
+.searchContainerDiv {
+    width: 178px;
+    height: 28px;
+    /*外边框,因为search控件里面包含了文本输入框和最后的search img*/
+    border: 1px solid #c2c2c2;
+}
+
+/*
+    titleBar Div控件以Row的形式体现，这样方便控制下面的Logo和右侧的search排序
+    此处从O365 Copy的其实还有其他的方法。
+*/
+.tablerow {
+    height: 90px;
+    display: table-row;
+}
+
+/*表示是一个table中的单元格*/
+.tablecell {
+    display: table-cell;
+}
+
+/*设置元素的垂直对齐方式.Top表示把元素放在父元素的顶端*/
+.verticalAlignTop {
+    vertical-align: top;
+}
+
+/*  
+    设置元素的垂直对齐方式.
+    Top表示把元素放在父元素的顶端
+    middle表示居中对齐
+*/
+.verticalAlignMiddle {
+    vertical-align: middle;
+}
+
+/*浮动靠右.注意下：浮动。如果父级元素不指定高度,那么在页面中看的时候可能子元素就在父元素之外了*/
+.floatRight {
+    float: right;
+}
+
+.searchInputTextBoxContainer {
+    display: inline;
+}
+
+.searchInputTextBox {
+    width: 147px;
+    height: 28px;
+    /*去掉文本输入框的边框*/
+    border-style: none;
+    outline-style: none;
+    padding: 0px;
+    margin-left: 1px;
+    /*border-width: 0px;*/
+    /*设置字的颜色*/
+    /*color: rgb(119, 119, 119);*/
+}
+
+/*Search图标的父Link属性.*/
+.searchLink {
+    width: 24px;
+    height: 24px;
+    /*这里一定是inline block不能是inline 否则overflow不生效*/
+    display: inline-block;
+    /*鼠标移动上后,指针的形状*/
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    border: 0px solid transparent;
+    /*因为Search图标很大是通过相对位置截取的,这里是隐藏掉多余的*/
+    overflow: hidden;
+    margin:2px 0px 2px 0px;
+}
+
+/*Search图标的相对位置.*/
+.searchImg {
+    left: 0px;
+    top: -54px;
+    position: absolute;
+}
+
+.navigationUl {
+    height: 40px;
+    padding: 0px;
+}
+
+/*设置li的背景色，以及让li水平显示而不是垂直显示*/
+.liInLine {
+    background-color: lightgray;
+    display: inline-block;
+    height: 40px;
+}
+
+/*li控件下的连接样式.注意背景要是透明的，方便以后的鼠标悬浮、点击选择的颜色变化*/
+.navigationLink {
+    display: block;
+    /*不要link的下划线*/
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    width: 200px;
+    background-color: transparent;
+}
+
+/*连接点击激活后，颜色变化*/
+.navigationLinkSelected {
+    background-color: blanchedalmond;
+}
+
+/*连接鼠标悬停后的颜色变化*/
+a.navigationLink:hover {
+    background-color: blanchedalmond;
+}
+
+/*Navigation下页面的最高级别控件.设置高度,主要是下面的Crumb是浮动的*/
+.crumbContainerSize {
+    height: 46px;
+}
+
+/*根据设计图片指定上下间距*/
+.crumbDiv {
+    /*margin-top: 20px;*/
+    margin-bottom: 20px;
+    display: inline;
+}
+
+/*
+    当前控件显示是inline的，和后面的控件在同一行显示.
+    注意：这里针对的是当前的控件，如果后面的控件还想同行显示那么也要引用此样式
+*/
+.crumLinkDiv {
+    display: inline;
+}
+
+/*根据设计图片显示字体的样式、大小、颜色*/
+.crumbCurrentPageFont {
+    font-family: Meiryo UI;
+    font-size: 13px;
+    font-style: normal;
+    color: #222222;
+}
+
+.crumLink {
+    text-decoration: none;
+}
+
+.crumbLinkPageFont {
+    font-family: Meiryo UI;
+    font-size: 13px;
+    font-style: normal;
+    color: #3d99d3;
+}
+
+.crumbNarrowDiv {
+    width: 6px;
+    height: 9px;
+    /*这里一定是inline block不能是inline 否则overflow不生效*/
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid transparent;
+    /*因为Search图标很大是通过相对位置截取的,这里是隐藏掉多余的*/
+    overflow: hidden;
+}
+
+.crumbNarrowImg {
+    /*下面的left and top 2个数据会在设计图纸中给出*/
+    left: -18px;
+    /*TODO:这里有个小问题：仔细看的话好像箭头与连接的字没有处于同一条水平线上.所以我从0改成了1*/
+    top: 1px;
+    position: absolute;
+}
+
+.contentContainerSize {
+    height: 300px;
+}
+
+.treeContainerSize {
+    width: 200px;
+    min-height: 30px;
+}
+
+.treeUl {
+    /*上右下左的顺序*/
+    padding: 0px;
+    margin: 0;
+}
+
+/*设置li的背景色，以及让li垂直显示*/
+.liBlock {
+    background-color: #ffffff;
+    display: block;
+    width: 200px;
+    min-height: 30px;
+    text-align: inherit;
+}
+
+.treeLink {
+    display: block;
+    font-family: Meriyo UI;
+    font-size: 13px;
+    color: #3a3a3a;
+    word-wrap: break-word;
+    padding: 5px 20px 5px 20px;
+}
+
+a.treeLink:hover {
+    background-color: #f5f5f5;
+}
+
+.treeLinkSelected {
+    background-color: #f5f5f5;
+    /*注意一定要有第二个solid否则线无法显示出来*/
+    border-left: 2px solid #e55a8a;
+}

@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="Js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/homework.css" />
+    <title></title>
+</head>
+<body class="center totalWidth">
+    <div id="bodyContainer">
+        <div id="titleBar" class="tablerow">
+            <div id="logo" class="tablecell logoWidth verticalAlignTop">
+                <img src="/Image/logo.png" alt="Logo" />
+            </div>
+            <div class="tablecell searchDiv floatRight">
+                <input type="text" id="inputSearchText" class="verticalAlignTop searchTextBorder searchTextHelpText" value="Search this site" />
+                <a title="Search" role="button" class="searchLink verticalAlignTop">
+                    <img src="Image/icon.png" alt="Search" class="searchImg" />
+                </a>
+            </div>
+        </div>
+        <div id="navigation">
+            <ul class="navigationUl">
+                <li class="liInLine">
+                    <a class="navigationLink navigationLinkSelected" onclick="NavigationSelected(this)">ArtDesign Gui 2</a>
+                </li>
+                <li class="liInLine">
+                    <a class="navigationLink" onclick="NavigationSelected(this)">Common</a>
+                </li>
+                <li class="liInLine">
+                    <a class="navigationLink" onclick="NavigationSelected(this)">Division</a>
+                </li>
+                <li class="liInLine">
+                    <a class="navigationLink" onclick="NavigationSelected(this)">Information</a>
+                </li>
+            </ul>
+        </div>
+        <div id="crumbContainer" class="crumbContainerSize">
+            <!-- TODO:这部分应该是动态变化的. -->
+            <div id="Crumb" class="crumbDiv floatRight">
+                <div id="firstLevelLink" class="crumLinkDiv">
+                    <a href="https://www.baidu.com" class="crumLink crumbLinkPageFont">Fir Level Link</a>
+                </div>
+                <div class="crumbNarrowDiv">
+                    <img src="Image/icon.png" class="crumbNarrowImg" />
+                </div>
+                <div id="secondLevelLink" class="crumLinkDiv">
+                    <a href="https://www.baidu.com" class="crumLink crumbLinkPageFont">Sec Level Link</a>
+                </div>
+                <div class="crumbNarrowDiv">
+                    <img src="Image/icon.png" class="crumbNarrowImg" />
+                </div>
+                <div id="currentPage" class="crumbCurrentPageFont crumLinkDiv">Current Page</div>
+            </div>
+        </div>
+        <div id="contentCOntainer" class="contentContainerSize">
+            <div id="tree" class="treeContainerSize">
+                <ul class="treeUl">
+                    <li class="liBlock">
+                        <a class="treeLink treeLinkSelected" onclick="TreeLinkSelected(this)">Documentsdsf dasfdadsf sdfsfd asdfasd fasdf asfasdfasfdsa</a>
+                    </li>
+                    <li class="liBlock">
+                        <a class="treeLink" onclick="TreeLinkSelected(this)">Pages</a>
+                    </li>
+                    <li class="liBlock">
+                        <a class="treeLink" onclick="TreeLinkSelected(this)">Site Contents</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
