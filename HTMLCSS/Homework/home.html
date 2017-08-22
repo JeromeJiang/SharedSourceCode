@@ -13,18 +13,24 @@
             </div>
             <div class="tablecell verticalAlignMiddle">
                 <div class="searchContainerDiv">
-                    <input type="text" id="inputSearchText" class="verticalAlignTop searchInputTextBox"/>
+                    <input type="text" id="inputSearchText" class="verticalAlignTop searchInputTextBox" />
                     <a title="Search" role="button" class="searchLink">
                         <img src="Image/icon.png" alt="Search" class="searchImg" />
                     </a>
                 </div>
-
             </div>
         </div>
         <div id="navigation">
             <ul class="navigationUl">
                 <li class="liInLine">
-                    <a class="navigationLink navigationLinkSelected" onclick="NavigationSelected(this)">ArtDesign Gui 2</a>
+                    <a class="navigationLink" onclick="NavigationSelected(this)">ArtDesign Gui 2</a>
+                    <!--<div class="secondMenuDiv">
+                        <ul class="ulSecondMenu">
+                            <li class="liSecondMenu">
+                                <a class="navigationLink" onmouseover="" onclick="NavigationSelected(this)">二级栏目</a>
+                            </li>
+                        </ul>
+                    </div>-->
                 </li>
                 <li class="liInLine">
                     <a class="navigationLink" onclick="NavigationSelected(this)">Common</a>
@@ -37,37 +43,90 @@
                 </li>
             </ul>
         </div>
-        <div id="crumbContainer" class="crumbContainerSize">
-            <!-- TODO:这部分应该是动态变化的. -->
-            <div id="Crumb" class="crumbDiv floatRight">
-                <div id="firstLevelLink" class="crumLinkDiv">
-                    <a href="https://www.baidu.com" class="crumLink crumbLinkPageFont">Fir Level Link</a>
-                </div>
-                <div class="crumbNarrowDiv">
-                    <img src="Image/icon.png" class="crumbNarrowImg" />
-                </div>
-                <div id="secondLevelLink" class="crumLinkDiv">
-                    <a href="https://www.baidu.com" class="crumLink crumbLinkPageFont">Sec Level Link</a>
-                </div>
-                <div class="crumbNarrowDiv">
-                    <img src="Image/icon.png" class="crumbNarrowImg" />
-                </div>
-                <div id="currentPage" class="crumbCurrentPageFont crumLinkDiv">Current Page</div>
-            </div>
-        </div>
         <div id="contentCOntainer" class="contentContainerSize">
-            <div id="tree" class="treeContainerSize">
-                <ul class="treeUl">
-                    <li class="liBlock">
-                        <a class="treeLink treeLinkSelected" onclick="TreeLinkSelected(this)">Documentsdsf dasfdadsf sdfsfd asdfasd fasdf asfasdfasfdsa</a>
-                    </li>
-                    <li class="liBlock">
-                        <a class="treeLink" onclick="TreeLinkSelected(this)">Pages</a>
-                    </li>
-                    <li class="liBlock">
-                        <a class="treeLink" onclick="TreeLinkSelected(this)">Site Contents</a>
-                    </li>
-                </ul>
+            <div id="leftZone" class="leftZone">
+                <div id="tree" class="treeContainerSize">
+                    <ul class="treeUl">
+                        <li class="liBlock">
+                            <a class="treeLink" onclick="TreeLinkSelected(this)">
+                                <div class="tablecell">
+                                    <div class="treeImageDivContainer">
+                                        <img src="Image/icon.png" alt="iamge" class="treeImageA" />
+                                    </div>
+                                </div>
+                                <div class="tablecell">
+                                    <div class="treeText">Documents</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="liBlock">
+                            <a class="treeLink" onclick="TreeLinkSelected(this)">
+                                <div class="tablecell">
+                                    <div class="treeImageDivContainer">
+                                        <img src="Image/icon.png" alt="iamge" class="treeImageB" />
+                                    </div>
+                                </div>
+                                <div class="tablecell">
+                                    <div class="treeText">DC</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="liBlock">
+                            <a class="treeLink" onclick="TreeLinkSelected(this)">
+                                <div class="tablecell">
+                                    <div class="treeImageDivContainer">
+                                        <img src="Image/icon.png" alt="iamge" class="treeImageC" />
+                                    </div>
+                                </div>
+                                <div class="tablecell">
+                                    <div class="treeText">Site settings</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="liBlock">
+                            <a class="treeLink" onclick="TreeLinkSelected(this)">
+                                <div class="tablecell">
+                                    <div class="treeImageDivContainer">
+                                        <img src="Image/icon.png" alt="iamge" class="treeImageD" />
+                                    </div>
+                                </div>
+                                <div class="tablecell">
+                                    <div class="treeText">Testads asdf asdf asdfwerv aerqwe sadfwer</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="link" class="linkSize">
+                    <div class="linkTitle">News</div>
+                    <div class="linkContainerNews">
+                        <ul class="linkUl">
+                            <li class="linkLiBlock">
+                                <a class="linkTreeLink" onclick="LinkLinkSelected(this)">Company(HR)</a>
+                            </li>
+                            <li class="linkLiBlock">
+                                <a class="linkTreeLink" onclick="LinkLinkSelected(this)">i-flow</a>
+                            </li>
+                            <li class="linkLiBlock">
+                                <a class="linkTreeLink" onclick="LinkLinkSelected(this)">Ribbon</a>
+                            </li>
+                            <li class="linkLiBlock">
+                                <a class="linkTreeLink" onclick="LinkLinkSelected(this)">社员一览</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="linkTitle">Business</div>
+                    <div class="linkContainerBusiness">
+                        <ul class="linkUl">
+                            <li class="linkLiBlockBusiness">
+                                <a class="linkTreeLinkBusiness" onclick="LinkLinkBusinessSelected(this)">目的</a>
+                            </li>
+                            <li class="linkLiBlockBusiness">
+                                <a class="linkTreeLinkBusiness" onclick="LinkLinkBusinessSelected(this)">别</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

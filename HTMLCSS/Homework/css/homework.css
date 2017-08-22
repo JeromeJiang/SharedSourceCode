@@ -101,7 +101,7 @@
     border: 0px solid transparent;
     /*因为Search图标很大是通过相对位置截取的,这里是隐藏掉多余的*/
     overflow: hidden;
-    margin:2px 0px 2px 0px;
+    margin: 2px 0px 2px 0px;
 }
 
 /*Search图标的相对位置.*/
@@ -112,15 +112,15 @@
 }
 
 .navigationUl {
-    height: 40px;
+    height: 38px;
     padding: 0px;
 }
 
 /*设置li的背景色，以及让li水平显示而不是垂直显示*/
 .liInLine {
-    background-color: lightgray;
     display: inline-block;
-    height: 40px;
+    height: 38px;
+    /*margin-right: 3px;*/
 }
 
 /*li控件下的连接样式.注意背景要是透明的，方便以后的鼠标悬浮、点击选择的颜色变化*/
@@ -129,20 +129,30 @@
     /*不要link的下划线*/
     text-decoration: none;
     text-align: center;
-    line-height: 40px;
-    height: 40px;
+    line-height: 38px;
+    height: 38px;
     width: 200px;
-    background-color: transparent;
+    background-color: #f1f1f1;
+    font-family: Meiryo UI;
+    font-size: 13px;
+    color: #333333;
 }
 
 /*连接点击激活后，颜色变化*/
 .navigationLinkSelected {
-    background-color: blanchedalmond;
+    background-color: #e55a8a;
+    font-family: Meiryo UI;
+    font-size: 15px;
+    color: #333333;
 }
 
 /*连接鼠标悬停后的颜色变化*/
 a.navigationLink:hover {
-    background-color: blanchedalmond;
+    background-color: #fff0f0;
+    border: 1px solid #e55a8a;
+    font-family: Meiryo UI;
+    font-size: 15px;
+    color: #333333;
 }
 
 /*Navigation下页面的最高级别控件.设置高度,主要是下面的Crumb是浮动的*/
@@ -206,43 +216,206 @@ a.navigationLink:hover {
 
 .contentContainerSize {
     height: 300px;
+    margin-top: 40px;
+}
+
+.leftZone {
+    width: 200px;
+    min-height: 65px;
 }
 
 .treeContainerSize {
+    min-height: 65px;
     width: 200px;
-    min-height: 30px;
 }
 
 .treeUl {
     /*上右下左的顺序*/
     padding: 0px;
-    margin: 0;
+    margin-bottom: 40px;
 }
 
 /*设置li的背景色，以及让li垂直显示*/
 .liBlock {
-    background-color: #ffffff;
     display: block;
     width: 200px;
-    min-height: 30px;
-    text-align: inherit;
+    margin-bottom: 5px;
 }
 
 .treeLink {
+    background-color: #f4f4f4;
     display: block;
     font-family: Meriyo UI;
-    font-size: 13px;
-    color: #3a3a3a;
-    word-wrap: break-word;
-    padding: 5px 20px 5px 20px;
+    font-size: 15px;
+    color: #333333;
+    padding: 10px 20px 10px 20px;
+    border-left: 3px solid #e55a8a;
 }
 
 a.treeLink:hover {
-    background-color: #f5f5f5;
+    background-color: #fff0f0;
 }
 
 .treeLinkSelected {
-    background-color: #f5f5f5;
+    background-color: #fff0f0;
     /*注意一定要有第二个solid否则线无法显示出来*/
-    border-left: 2px solid #e55a8a;
+    border: 1px solid #e55a8a;
+    border-left: 3px solid #e55a8a;
 }
+
+.treeImageDivContainer {
+    width: 34px;
+    height: 34px;
+    /*这里一定是inline block不能是inline 否则overflow不生效*/
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    border: 0px solid transparent;
+    /*因为Search图标很大是通过相对位置截取的,这里是隐藏掉多余的*/
+    overflow: hidden;
+}
+
+.treeImageA {
+    left: 0px;
+    top: -126px;
+    position: absolute;
+}
+
+.treeImageB {
+    left: -34px;
+    top: -126px;
+    position: absolute;
+}
+
+.treeImageC {
+    left: -68px;
+    top: -126px;
+    position: absolute;
+}
+
+.treeImageD {
+    left: -102px;
+    top: -126px;
+    position: absolute;
+}
+
+.treeText {
+    width: 104px;
+    text-align: left;
+    word-wrap: break-word;
+    margin-left: 20px;
+}
+
+.tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.linkSize {
+    min-height: 65px;
+    width: 200px;
+}
+
+.linkTitle {
+    font-family: Meiryo UI;
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.linkContainerNews {
+    margin-bottom: 40px;
+}
+
+.linkUl {
+    /*上右下左的顺序*/
+    padding: 0px;
+}
+
+/*设置li的背景色，以及让li垂直显示*/
+.linkLiBlock {
+    display: block;
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+.linkTreeLink {
+    background-color: #ffffff;
+    display: block;
+    font-family: Meriyo UI;
+    font-size: 15px;
+    color: #333333;
+    padding: 15px 15px 15px 15px;
+    border: 1px solid #eeeeee;
+}
+
+a.linkTreeLink:hover {
+    background-color: #e1f7ff;
+    border: 1px solid #eeeeee;
+    color: #3d99d3;
+}
+
+.linkTreeLinkSelected {
+    background-color: #6cc8ff;
+    color: #ffffff;
+}
+
+.linkContainerBusiness {
+    margin-bottom: 40px;
+}
+
+/*设置li的背景色，以及让li垂直显示*/
+.linkLiBlockBusiness {
+    display: inline-block;
+    width: 97px;
+    height: 95px;
+}
+
+.linkTreeLinkBusiness {
+    display: block;
+    background-color: #ffffff;
+    font-family: Meriyo UI;
+    font-size: 15px;
+    color: #333333;
+    padding: 0px 10px 0px 10px;
+    border: 2px solid #eeeeee;
+    height: 95px;
+    text-align: center;
+    line-height: 95px;
+}
+
+a.linkTreeLinkBusiness:hover {
+    background-color: #e1f7ff;
+    border: 2px solid #77ccff;
+    color: #3d99d3;
+}
+
+.linkTreeLinkBusinessSelected {
+    background-color: #6cc8ff;
+    color: #ffffff;
+}
+
+.secondMenuDiv {
+    margin-top: 2px;
+    float: none;
+    position: absolute;
+}
+
+.ulSecondMenu {
+    height: 38px;
+    padding: 0px;
+}
+
+.liSecondMenu {
+    display: block;
+    height: 38px;
+    margin-bottom: 1px;
+}
+
+/*ul.ulSecondMenu {
+    position: absolute;
+}
+
+li.liSecondMenu {
+    float: none;
+}*/
