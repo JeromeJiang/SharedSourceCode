@@ -399,26 +399,91 @@ a.linkTreeLinkBusiness:hover {
 }
 
 .secondMenuDiv {
-    margin-top: 2px;
-    float: none;
     position: absolute;
+    width: 200px;
+    /*height: 38px;*/
+    display: none;
+    background: #fff;
+}
+
+li.liInLine:Hover div.secondMenuDiv {
+    display: inline-block;
 }
 
 .ulSecondMenu {
-    height: 38px;
+    /*height: 38px;*/
     padding: 0px;
 }
 
 .liSecondMenu {
     display: block;
+    /*二级菜单的li位置要是相对的,否则三级菜单显示的位置不对*/
+    position: relative;
+    /*height: 38px;*/
+}
+
+
+
+/*li控件下的连接样式.注意背景要是透明的，方便以后的鼠标悬浮、点击选择的颜色变化*/
+.navigationMenuLink {
+    display: block;
+    /*不要link的下划线*/
+    text-decoration: none;
+    text-align: center;
+    line-height: 38px;
     height: 38px;
-    margin-bottom: 1px;
+    width: 200px;
+    background-color: #f1f1f1;
+    font-family: Meiryo UI;
+    font-size: 15px;
+    color: #333333;
 }
 
-/*ul.ulSecondMenu {
+/*连接点击激活后，颜色变化*/
+.navigationMenuLinkSelected {
+    background-color: #e55a8a;
+    font-family: Meiryo UI;
+    font-size: 15px;
+    color: #333333;
+}
+
+/*
+    TODO:
+    1.鼠标悬停后会有一个小小的位移。原因不明.
+    2.无法覆盖住下面左侧Tree的图片
+*/
+a.navigationMenuLink:hover {
+    line-height: 38px;
+    height: 38px;
+    width: 198px;
+    background-color: #fff0f0;
+    border: 1px solid #e55a8a;
+    font-family: Meiryo UI;
+    font-size: 15px;
+    color: #333333;
+}
+
+.thridMenuDiv {
     position: absolute;
+    width: 200px;
+    display: none;
+    background: #fff;
 }
 
-li.liSecondMenu {
-    float: none;
-}*/
+/*
+    css中一种特殊的写法类似于XPath.
+    标签名.Class名字（空格）下一层标签名字
+*/
+li.liSecondMenu:Hover div.thridMenuDiv {
+    display: inline-block;
+    left: 100%;
+    top: 0;
+}
+
+.ulThridMenu {
+    padding: 0px;
+}
+
+.liThridMenu {
+    display: block;
+}
