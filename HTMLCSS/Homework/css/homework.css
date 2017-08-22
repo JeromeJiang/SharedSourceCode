@@ -119,6 +119,7 @@
 /*设置li的背景色，以及让li水平显示而不是垂直显示*/
 .liInLine {
     display: inline-block;
+    width: 200px;
     height: 38px;
     /*margin-right: 3px;*/
 }
@@ -134,7 +135,7 @@
     width: 200px;
     background-color: #f1f1f1;
     font-family: Meiryo UI;
-    font-size: 13px;
+    font-size: 15px;
     color: #333333;
 }
 
@@ -148,6 +149,8 @@
 
 /*连接鼠标悬停后的颜色变化*/
 a.navigationLink:hover {
+    line-height: 36px;
+    width: 198px;
     background-color: #fff0f0;
     border: 1px solid #e55a8a;
     font-family: Meiryo UI;
