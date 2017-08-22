@@ -225,6 +225,7 @@ a.navigationLink:hover {
 .leftZone {
     width: 200px;
     min-height: 65px;
+    display: inline-block;
 }
 
 .treeContainerSize {
@@ -235,6 +236,7 @@ a.navigationLink:hover {
 .treeUl {
     /*上右下左的顺序*/
     padding: 0px;
+    margin-top: 0px;
     margin-bottom: 40px;
 }
 
@@ -486,4 +488,76 @@ li.liSecondMenu:Hover div.thridMenuDiv {
 
 .liThridMenu {
     display: block;
+}
+
+.middleZone {
+    width: 550px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.annBarStyle {
+    margin-bottom: 20px;
+}
+
+.announcementDiv {
+    background-color: #ffffff;
+    width: 518px;
+    border: 1px solid #eeeeee;
+    padding: 15px 15px 25px 15px;
+}
+
+.annoucementTitleDiv {
+    font-family: Meiryo UI;
+    font-size: 18px;
+    color: #222222;
+    display: inline-block;
+}
+
+.viewAllDivStyle {
+    display: inline;
+}
+
+.viewAllLink {
+    text-decoration: none;
+}
+
+.viewAllLinkPageFont {
+    font-family: Meiryo UI;
+    font-size: 13px;
+    color: #333333;
+}
+
+.viewAllNarrowDiv {
+    width: 6px;
+    height: 9px;
+    /*这里一定是inline block不能是inline 否则overflow不生效*/
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    border: 0px solid transparent;
+    /*因为Search图标很大是通过相对位置截取的,这里是隐藏掉多余的*/
+    overflow: hidden;
+}
+
+.viewAllNarrowImg {
+    /*下面的left and top 2个数据会在设计图纸中给出*/
+    left: -18px;
+    top: 0px;
+    position: absolute;
+}
+
+.announceTable {
+    display: table;
+}
+
+.thStyle {
+    font-family: Meiryo UI;
+    font-size: 14px;
+    color: #333333;
+    font-style: normal;
+    font-weight: normal;
+    padding: 0px;
 }
