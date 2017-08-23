@@ -553,6 +553,10 @@ li.liSecondMenu:Hover div.thridMenuDiv {
     display: table;
 }
 
+.tableStyle {
+    border-collapse: collapse;
+}
+
 .thStyle {
     font-family: Meiryo UI;
     font-size: 14px;
@@ -560,4 +564,121 @@ li.liSecondMenu:Hover div.thridMenuDiv {
     font-style: normal;
     font-weight: normal;
     padding: 0px;
+    border-bottom: 2px solid #e55a8a;
+}
+
+.thDiv {
+    margin-bottom: 10px;
+}
+
+.thDivMarginRight {
+    margin-right: 10px;
+}
+
+.tdDivMarginLeft {
+    margin-left: 10px;
+}
+
+.tdDiv {
+    display: block;
+    text-align: left;
+}
+
+.tdDivMarginTopBottom {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.trStyle {
+    min-height: 40px;
+}
+
+.trOddColor {
+    background-color: #ffffff;
+}
+
+.trEvenColor {
+    background-color: #f9f9f9;
+}
+
+.tdLinkFont {
+    font-size: 13px;
+    font-family: Meiryo UI;
+    color: #3d99d3;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+
+.tdDivFont {
+    font-family: Meiryo UI;
+    font-size: 13px;
+    color: #333333;
+}
+
+a.tdLinkFont:hover {
+    text-decoration: underline;
+}
+
+.newsReleaseDiv {
+    margin-top: 30px;
+    width: 518px;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-top: 2px solid #e55a8a;
+    padding: 15px 15px 5px 15px;
+}
+
+.newsReleaseBarStyle {
+    margin-bottom: 10px;
+}
+
+.newsReleaseUl {
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    list-style: disc inside none;
+    /*通过下面的颜色和size来控制前面的点的颜色和大小.*/
+    color: #e55a8a;
+    font-size: 4px;
+}
+
+.newsLink {
+    font-family: Meiryo UI;
+    font-size: 13px;
+    color: #333333;
+    text-decoration: none;
+}
+
+a.newsLink:hover {
+    font-family: Meiryo UI;
+    font-size: 13px;
+    color: #3d99d3;
+    text-decoration: underline;
+}
+
+.newsLinkDiv {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+}
+
+.newsLinkDateFont {
+    margin-left: 5px;
+    font-family: Meiryo UI;
+    font-size: 13px;
+    color: #777777;
+}
+
+.infoDivContainer {
+    margin-top: 15px;
+    display: inline-block;
+    width: inherit;
+}
+
+.infoDivLink {
+    float: right;
+    font-family: Meiryo UI;
+    font-size: 13px;
+    color: #3d99d3;
+    font-weight: bold;
+    text-decoration: none;
 }
