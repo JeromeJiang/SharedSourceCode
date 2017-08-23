@@ -1,5 +1,10 @@
 ﻿
 
+li {
+    margin: 0px;
+    padding: 0px;
+}
+
 .center {
     /*设置当前控件与父控件的上下左右边距。这里的边距可以在浏览器F12中style页面查看到更形象的 */
     vertical-align: middle;
@@ -218,14 +223,17 @@ a.navigationLink:hover {
 }
 
 .contentContainerSize {
-    height: 300px;
     margin-top: 40px;
+    display: block;
 }
 
 .leftZone {
     width: 200px;
     min-height: 65px;
-    display: inline-block;
+    /*display: inline-block;
+    vertical-align: top;*/
+    /*不能使用上述的，因为使用inline-block会在div之间产生一段空隙*/
+    float: left;
 }
 
 .treeContainerSize {
@@ -255,6 +263,7 @@ a.navigationLink:hover {
     color: #333333;
     padding: 10px 20px 10px 20px;
     border-left: 3px solid #e55a8a;
+    text-decoration: none;
 }
 
 a.treeLink:hover {
@@ -494,8 +503,7 @@ li.liSecondMenu:Hover div.thridMenuDiv {
     width: 550px;
     margin-left: 15px;
     margin-right: 15px;
-    display: inline-block;
-    vertical-align: top;
+    float: left;
 }
 
 .annBarStyle {
@@ -681,4 +689,149 @@ a.newsLink:hover {
     color: #3d99d3;
     font-weight: bold;
     text-decoration: none;
+}
+
+.rightZone {
+    width: 220px;
+    float: left;
+}
+
+.backgroupDiv {
+    width: 220px;
+    height: 85px;
+    line-height: 85px;
+    background-image: url(/image/1.png);
+    font-family: Meiryo UI;
+    font-size: 13px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.webDivContainer {
+    margin-top: 40px;
+}
+
+.webTitle {
+    font-family: Meiryo UI;
+    font-size: 18px;
+    color: #333333;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+}
+
+.webImageContainer {
+    height: 24px;    
+    text-align: left;
+    vertical-align: middle;
+}
+
+.webImageLink {
+    width: 18px;
+    height: 18px;
+    float: left;
+    position: relative;
+    background-color: transparent;
+    border: 0px solid transparent;
+    /*因为Search图标很大是通过相对位置截取的,这里是隐藏掉多余的*/
+    overflow: hidden;
+    display: inline-block;
+}
+
+.webImagePosition {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+.webTitleContainer {
+    height: 24px;
+}
+
+.webLinkContainer {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.webLinkStyle {
+    margin-bottom: 10px;
+    height: 85px;
+}
+
+.tableCell {
+    display: table-cell;
+}
+
+.webLinkFontContainer {
+    height: 85px;
+    width: 125px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.webLinkFont1 {
+    font-family: Meiryo UI;
+    font-size: 15px;
+    color: #333333;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+}
+
+.webLinkFont2 {
+    font-family: Meiryo UI;
+    font-size: 13px;
+    color: #666666;
+    word-wrap: break-word;
+}
+
+.webLinkDivMargin {
+    margin-left: 10px;
+}
+
+.blogDivContainer {
+    margin-top: 40px;
+}
+
+.blogTitle {
+    font-family: Meiryo UI;
+    font-size: 18px;
+    color: #333333;
+}
+
+.blogContainer {
+    margin-top: 15px;
+}
+
+.blogUl {
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    list-style: disc inside none;
+    /*通过下面的颜色和size来控制前面的点的颜色和大小.*/
+    color: #e55a8a;
+    font-size: 4px;
+}
+
+.blogLinkDiv {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+}
+
+.blogLink {
+    font-family: Meiryo UI;
+    font-size: 13px;
+    color: #333333;
+    text-decoration: none;
+}
+
+a.blogLink:hover {
+    font-family: Meiryo UI;
+    font-size: 13px;
+    color: #3d99d3;
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 
 }
