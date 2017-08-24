@@ -721,7 +721,7 @@ a.newsLink:hover {
 }
 
 .webImageContainer {
-    height: 24px;    
+    height: 24px;
     text-align: left;
     vertical-align: middle;
 }
@@ -805,17 +805,12 @@ a.newsLink:hover {
 .blogUl {
     margin: 0px;
     padding: 0px 0px 0px 0px;
-    list-style: disc inside none;
+    list-style: none;
     /*通过下面的颜色和size来控制前面的点的颜色和大小.*/
-    color: #e55a8a;
-    font-size: 4px;
 }
 
 .blogLinkDiv {
-    display: inline-block;
     height: 40px;
-    line-height: 40px;
-    margin-right: 10px;
 }
 
 .blogLink {
@@ -823,6 +818,8 @@ a.newsLink:hover {
     font-size: 13px;
     color: #333333;
     text-decoration: none;
+    line-height: 40px;
+    margin-left: 10px;
 }
 
 a.blogLink:hover {
@@ -832,6 +829,19 @@ a.blogLink:hover {
     text-decoration: underline;
 }
 
-footer {
-    margin-top: 
+.circle {
+    width: 22px;
+    height: 22px;
+    background: #ffffff;
+    -moz-border-radius: 22px;
+    -webkit-border-radius: 22px;
+    border-radius: 22px;
+    border: 2px solid #e55a8a;
+    /*display: inline-block;*/
+    font-family: Meiryo UI;
+    font-size: 12px;
+    color: #e55a8a;
+    font-weight: bold;
+    line-height: 22px;
+    text-align: center;
 }
